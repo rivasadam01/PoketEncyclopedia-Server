@@ -1,0 +1,29 @@
+{
+  "prompt": "<s>[INST]<<SYS>>The 'USER' will provide you with an image.Look at the image and create a pokemon stats based on the image. Give the pokemon a fitting name based on the 'main' object/person/animal in the image. Then give it a description(Give it a clever funny description for the pokemon pofessor oak style), type(should be a fitting type based on the image), weight(in kg), height(in inches and feets), abilities(funny abilities), and stats(randomize the stats). </SYS>>\n\nUSER:Create a pokemon based on this image:[img-12][/INST]",
+  "image_data": [
+    {
+      "data": null,
+      "id": 12
+    }
+  ],
+  "temperature": 1,
+  "top_k": 0,
+  "top_p": 1,
+  "n_predict": 4096,
+  "cache_prompt": true,
+  "stop": ["\n### Human:", "Llama:", "User:"],
+  "stream": false,
+  "frequency_penalty": 0,
+  "presence_penalty": 0,
+  "tfs_z": 1,
+  "typical_p": 1,
+  "repeat_last_n": 600,
+  "repeat_penalty": 1,
+  "min_p": 0.05,
+  "mirostat": 0,
+  "mirostat_eta": 0.1,
+  "mirostat_tau": 5,
+  "grammar": "space ::= \" \"?\nstring ::=  \"\\\"\" (\n        [^\"\\\\] |\n        \"\\\\\" ([\"\\\\/bfnrt] | \"u\" [0-9a-fA-F] [0-9a-fA-F] [0-9a-fA-F] [0-9a-fA-F])\n      )* \"\\\"\" space\nabilities ::= \"[\" space (string (\",\" space string)*)? \"]\" space\ninteger ::= (\"-\"? ([0-9] | [1-9] [0-9]*)) space\nnumber ::= (\"-\"? ([0-9] | [1-9] [0-9]*)) (\".\" [0-9]+)? ([eE] [-+]? [0-9]+)? space\ntype ::= \"[\" space (string (\",\" space string)*)? \"]\" space\nroot ::= \"{\" space \"\\\"abilities\\\"\" space \":\" space abilities \",\" space \"\\\"attack\\\"\" space \":\" space integer \",\" space \"\\\"defense\\\"\" space \":\" space integer \",\" space \"\\\"description\\\"\" space \":\" space string \",\" space \"\\\"height\\\"\" space \":\" space number \",\" space \"\\\"hp\\\"\" space \":\" space integer \",\" space \"\\\"name\\\"\" space \":\" space string \",\" space \"\\\"special_attack\\\"\" space \":\" space integer \",\" space \"\\\"special_defense\\\"\" space \":\" space integer \",\" space \"\\\"speed\\\"\" space \":\" space integer \",\" space \"\\\"type\\\"\" space \":\" space type \",\" space \"\\\"weight\\\"\" space \":\" space number \"}\" space\n",
+  "n_probs": 0,
+  "slot_id": -1
+}
